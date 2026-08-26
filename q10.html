@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Answer 1</title>
+    <title>Practical 10 - Student Management System</title>
 </head>
 <body>
 
-    <!-- Common Navigation Menu -->
+    <!-- Common Navigation Menu for Assignment -->
     <div align="center">
-        <a href="home.html">Home</a> | 
+        <a href="index.html">Home</a> | 
         <a href="q1.html">q1</a> | <a href="q2.html">q2</a> | <a href="q3.html">q3</a> | 
         <a href="q4.html">q4</a> | <a href="q5.html">q5</a> | <a href="q6.html">q6</a> | 
         <a href="q7.html">q7</a> | <a href="q8.html">q8</a> | <a href="q9.html">q9</a> | 
@@ -16,10 +16,159 @@
     </div>
     <hr>
 
-    <!-- Answer Content -->
-    <h3>Q1 :- Explain the working principle of a p-n junction diode with a diagram.</h3>
-    <p><strong>Answer:</strong></p>
-    <p>Yahan par aap apne question ka detail answer likh sakte hain. Agar diagrams ki zarurat ho toh aap `&lt;img src="image.jpg"&gt;` tag ka use kar sakte hain.</p>
+    <!-- Practical 10 Content: Mini Project -->
+    <header align="center">
+        <h1>Student Management System</h1>
+    </header>
+    
+    <!-- Mini Project Internal Navigation -->
+    <nav align="center">
+        <a href="#home">1. Home</a> | 
+        <a href="#register">2. Student Registration</a> | 
+        <a href="#records">3. Student Records</a> | 
+        <a href="#about">4. About</a> | 
+        <a href="#contact">5. Contact</a>
+    </nav>
+    <hr>
+
+    <main>
+        <!-- Section 1: Home -->
+        <section id="home">
+            <h2>1. Home</h2>
+            <p><strong>Welcome to the Student Management System.</strong></p>
+            <p>This centralized platform is designed to help administrators efficiently register new students, maintain accurate academic records, and streamline institutional operations without any hassle.</p>
+        </section>
+        <hr>
+
+        <!-- Section 2: Student Registration -->
+        <section id="register">
+            <h2>2. Student Registration</h2>
+            <form action="#" method="POST">
+                <table cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="studentid">Student ID:</label></td>
+                        <td><input type="text" id="studentid" name="studentid" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentname">Name:</label></td>
+                        <td><input type="text" id="studentname" name="studentname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentemail">Email:</label></td>
+                        <td><input type="email" id="studentemail" name="studentemail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentmobile">Mobile:</label></td>
+                        <td><input type="tel" id="studentmobile" name="studentmobile" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentdob">Date of Birth:</label></td>
+                        <td><input type="date" id="studentdob" name="studentdob" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <input type="radio" id="smale" name="sgender" value="Male"> Male
+                            <input type="radio" id="sfemale" name="sgender" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentcourse">Course:</label></td>
+                        <td><input type="text" id="studentcourse" name="studentcourse" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentbranch">Branch:</label></td>
+                        <td><input type="text" id="studentbranch" name="studentbranch" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="studentaddress">Address:</label></td>
+                        <td><textarea id="studentaddress" name="studentaddress" rows="3" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Register Student"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <hr>
+
+        <!-- Section 3: Student Records -->
+        <section id="records">
+            <h2>3. Student Records</h2>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <tr bgcolor="#f0f0f0">
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Branch</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+                <tr align="center">
+                    <td>101</td>
+                    <td>Rahul</td>
+                    <td>B.Tech</td>
+                    <td>CSE</td>
+                    <td>rahul@email.com</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr align="center">
+                    <td>102</td>
+                    <td>Aman</td>
+                    <td>B.Tech</td>
+                    <td>CSE</td>
+                    <td>aman@email.com</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+                <tr align="center">
+                    <td>103</td>
+                    <td>Priya</td>
+                    <td>B.Tech</td>
+                    <td>IT</td>
+                    <td>priya@email.com</td>
+                    <td><a href="#">View</a></td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+
+        <!-- Section 4: About -->
+        <section id="about">
+            <h2>4. About</h2>
+            <p><strong>Purpose of the System:</strong></p>
+            <p>The primary purpose of this Student Management System is to automate and digitize the student data handling process. It provides a user-friendly interface for data entry, secure storage of personal and academic details, and quick retrieval of records, thereby reducing manual paperwork and improving overall efficiency.</p>
+        </section>
+        <hr>
+
+        <!-- Section 5: Contact -->
+        <section id="contact">
+            <h2>5. Contact Support</h2>
+            <form action="#" method="POST">
+                <table cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="contactname">Your Name:</label></td>
+                        <td><input type="text" id="contactname" name="contactname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="contactemail">Your Email:</label></td>
+                        <td><input type="email" id="contactemail" name="contactemail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" name="message" rows="4" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Send Message"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <br>
+    <footer align="center">
+        <p>&copy; 2026 Student Management System. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
