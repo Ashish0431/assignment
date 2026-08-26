@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Answer 1</title>
+    <title>Practical 7 - HTML5 Input Types</title>
 </head>
 <body>
 
     <!-- Common Navigation Menu -->
     <div align="center">
-        <a href="home.html">Home</a> | 
+        <a href="index.html">Home</a> | 
         <a href="q1.html">q1</a> | <a href="q2.html">q2</a> | <a href="q3.html">q3</a> | 
         <a href="q4.html">q4</a> | <a href="q5.html">q5</a> | <a href="q6.html">q6</a> | 
         <a href="q7.html">q7</a> | <a href="q8.html">q8</a> | <a href="q9.html">q9</a> | 
@@ -16,10 +16,81 @@
     </div>
     <hr>
 
-    <!-- Answer Content -->
-    <h3>Q1 :- Explain the working principle of a p-n junction diode with a diagram.</h3>
-    <p><strong>Answer:</strong></p>
-    <p>Yahan par aap apne question ka detail answer likh sakte hain. Agar diagrams ki zarurat ho toh aap `&lt;img src="image.jpg"&gt;` tag ka use kar sakte hain.</p>
+    <!-- Practical 7 Content -->
+    <h2 align="center">Practical 7: HTML5 Input Types</h2>
+
+    <form action="#" method="POST">
+        <table align="center" cellpadding="8" cellspacing="0" border="1">
+            <tr>
+                <th colspan="2" bgcolor="#f0f0f0">HTML5 Input Elements Demonstration</th>
+            </tr>
+            <tr>
+                <td><label for="username">1. Text (text):</label></td>
+                <td><input type="text" id="username" name="username" required placeholder="Enter name"></td>
+            </tr>
+            <tr>
+                <td><label for="useremail">2. Email (email):</label></td>
+                <td><input type="email" id="useremail" name="useremail" required placeholder="Enter email"></td>
+            </tr>
+            <tr>
+                <td><label for="userpass">3. Password (password):</label></td>
+                <td><input type="password" id="userpass" name="userpass" required placeholder="Enter password"></td>
+            </tr>
+            <tr>
+                <td><label for="quantity">4. Number (number):</label></td>
+                <td><input type="number" id="quantity" name="quantity" min="1" max="100" placeholder="1 to 100"></td>
+            </tr>
+            <tr>
+                <td><label for="bday">5. Date (date):</label></td>
+                <td><input type="date" id="bday" name="bday"></td>
+            </tr>
+            <tr>
+                <td><label for="appt">6. Time (time):</label></td>
+                <td><input type="time" id="appt" name="appt"></td>
+            </tr>
+            <tr>
+                <td><label for="favcolor">7. Color (color):</label></td>
+                <td><input type="color" id="favcolor" name="favcolor" value="#ff0000"></td>
+            </tr>
+            <tr>
+                <td><label for="vol">8. Range (range):</label></td>
+                <td><input type="range" id="vol" name="vol" min="0" max="50"></td>
+            </tr>
+            <tr>
+                <td><label for="myfile">9. File (file):</label></td>
+                <td><input type="file" id="myfile" name="myfile"></td>
+            </tr>
+            <tr>
+                <td><label>10. Checkbox (checkbox):</label></td>
+                <td>
+                    <input type="checkbox" id="agree" name="agree" value="Yes" required>
+                    <label for="agree">I agree to terms</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>11. Radio (radio):</label></td>
+                <td>
+                    <input type="radio" id="yes" name="choice" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="choice" value="No">
+                    <label for="no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="homepage">12. URL (url):</label></td>
+                <td><input type="url" id="homepage" name="homepage" placeholder="https://example.com"></td>
+            </tr>
+            <tr>
+                <td><label for="searchquery">13. Search (search):</label></td>
+                <td><input type="search" id="searchquery" name="searchquery" placeholder="Search here..."></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
 
 </body>
 </html>
