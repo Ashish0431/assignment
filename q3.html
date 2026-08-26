@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Answer 1</title>
+    <title>Practical 3 - HTML Tables</title>
 </head>
 <body>
 
     <!-- Common Navigation Menu -->
     <div align="center">
-        <a href="home.html">Home</a> | 
+        <a href="index.html">Home</a> | 
         <a href="q1.html">q1</a> | <a href="q2.html">q2</a> | <a href="q3.html">q3</a> | 
         <a href="q4.html">q4</a> | <a href="q5.html">q5</a> | <a href="q6.html">q6</a> | 
         <a href="q7.html">q7</a> | <a href="q8.html">q8</a> | <a href="q9.html">q9</a> | 
@@ -16,10 +16,54 @@
     </div>
     <hr>
 
-    <!-- Answer Content -->
-    <h3>Q1 :- Explain the working principle of a p-n junction diode with a diagram.</h3>
-    <p><strong>Answer:</strong></p>
-    <p>Yahan par aap apne question ka detail answer likh sakte hain. Agar diagrams ki zarurat ho toh aap `&lt;img src="image.jpg"&gt;` tag ka use kar sakte hain.</p>
+    <!-- Practical 3 Content -->
+    <h2 align="center">Practical 3: Student Marksheet</h2>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="70%" align="center">
+        <!-- Table Heading using colspan -->
+        <tr>
+            <th colspan="6" bgcolor="#e0e0e0">Student Marksheet</th>
+        </tr>
+        
+        <!-- Headers with rowspan and colspan -->
+        <tr bgcolor="#f0f0f0">
+            <th rowspan="2">Roll No.</th>
+            <th rowspan="2">Name</th>
+            <th colspan="3">Subjects</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr bgcolor="#f0f0f0">
+            <th>Java</th>
+            <th>Python</th>
+            <th>DBMS</th>
+        </tr>
+        
+        <!-- Data Rows -->
+        <tr align="center">
+            <td>101</td>
+            <td>Rahul</td>
+            <td>85</td>
+            <td>78</td>
+            <td>82</td>
+            <td>245</td>
+        </tr>
+        <tr align="center">
+            <td>102</td>
+            <td>Aman</td>
+            <td>75</td>
+            <td>88</td>
+            <td>79</td>
+            <td>242</td>
+        </tr>
+        <tr align="center">
+            <td>103</td>
+            <td>Priya</td>
+            <td>92</td>
+            <td>90</td>
+            <td>95</td>
+            <td>277</td>
+        </tr>
+    </table>
 
 </body>
 </html>
